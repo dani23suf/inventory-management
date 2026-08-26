@@ -1,0 +1,32 @@
+### Get Products
+
+GET http://inventory-management.test/api/products
+Accept: application/json
+
+### Stock In
+
+POST http://inventory-management.test/api/stock/in
+Content-Type: application/json
+Accept: application/json
+
+{
+    "product_id": 1,
+    "warehouse_id": 1,
+    "quantity": 10,
+    "note": "Restock"
+}
+
+### Stock Out
+
+POST http://inventory-management.test/api/stock/out
+Content-Type: application/json
+Accept: application/json
+
+{
+    "product_id": 1,
+    "warehouse_id": 1,
+    "quantity": 1,
+    "note": "Penjualan"
+}
+
+
